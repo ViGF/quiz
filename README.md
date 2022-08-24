@@ -11,9 +11,9 @@ React | Next | TypeScript
 Em seu terminal:
 ```bash
 # Clone o repositório
-git clone https://github.com/ViGF/Quiz.git
+git clone https://github.com/ViGF/quiz.git
 # Acesse a pasta do projeto
-cd Quiz
+cd quiz
 # Instale as dependências
 yarn add
 # Execute a aplicação

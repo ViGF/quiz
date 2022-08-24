@@ -1,0 +1,81 @@
+.resposta {
+    display: flex;
+    min-width: 50rem;
+    width: 80%;
+    height: 7rem;
+    margin: 1rem;
+    perspective: 1000px;
+}
+
+.conteudoResposta {
+    position: relative;
+    display: flex;
+    flex: 1;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.conteudoResposta.respostaRevelada {
+    transform: rotateY(180deg);
+}
+
+.frente, .verso {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.frente {
+    align-items: center;
+    border-radius: 1.2rem;
+    padding: 1.5rem;
+    color: #000;
+    background-color: #fff;
+}
+
+.verso {
+    transform: rotateY(180deg);
+}
+
+.verso > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 1.2rem;
+}
+
+.certa {
+    background-color: #2BAA6D;
+}
+
+.certa .valor, .errada .valor {
+    font-size: 2rem;
+}
+
+.errada {
+    background-color: #E44A4C;
+}
+
+.letra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 2rem;
+    color: #fff;
+}
+
+.valor {
+    font-size: 1.8rem;
+    font-weight: 700;
+}

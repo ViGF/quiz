@@ -31,7 +31,6 @@ export default function Questionario({ questao, ultima, questaoRespondida, irPro
             <Botao
                 onClick={irProximoPasso}
                 texto={ultima ? 'Finalizar' : 'Próxima'}
-                href={ultima? '/resultado' : undefined}
             />
         </div>
     )
